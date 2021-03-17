@@ -84,7 +84,6 @@ export class RecordConverter extends BaseConverter {
             return `{ [index: string]: ${this.convertType(type.values)} }`;
         }
 
-        this.addError(BaseConverter.errorMessages.TYPE_NOT_FOUND);
         return "any";
     }
 
